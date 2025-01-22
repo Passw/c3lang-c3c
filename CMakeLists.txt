@@ -546,7 +546,7 @@ else()
         target_compile_options(c3c_wrappers PRIVATE -fno-rtti)
     endif()
     target_compile_options(c3c PRIVATE -pthread -Wall -Werror -Wno-unknown-pragmas -Wno-unused-result
-            -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter)
+        -Wno-unused-function -Wno-unused-variable -Wno-unused-parameter -Wno-maybe-uninitialized -Wno-format-truncation)
 endif()
 
 install(TARGETS c3c DESTINATION bin)
