@@ -26,6 +26,6 @@ jobs:
         git branch -vv
     - name: RUN `git pull master -r`
       run: |
-        git remote add up git@github.com:c3lang/c3c.git
+        git remote add up https://github.com/c3lang/c3c.git
         git pull up master -r
         git push origin HEAD:master --force
